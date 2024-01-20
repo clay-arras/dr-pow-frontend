@@ -1,12 +1,15 @@
 import './App.css';
-import {Button} from "@nextui-org/react";
+import TemplateComponent from "./components/TemplateComponent"
 
 function App() {
-  return (
-      <Button color={"primary"}>
-        Hello
-      </Button>
-  );
+    return (
+        <div>
+            {/*<myTemplate>*/}
+
+            {/*</myTemplate>*/}
+            <TemplateComponent></TemplateComponent>
+        </div>
+    );
 }
 
 export default App;
