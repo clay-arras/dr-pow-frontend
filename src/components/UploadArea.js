@@ -11,8 +11,8 @@ export function UploadArea({selectedTemplate, setSelectedTemplate}) {
     const [isPressed, setIsPressed] = useState(false);
 
     const uploadPage = (
-        <div className={"rectangle-outer-upload"}>
-            <div className={"rectangle-inner-upload"}>
+        <div className={"rectangle-outer"}>
+            <div className={"rectangle-inner"}>
                 <PromptComponent
                     additionalPrompt={additionalPrompt}
                     setAdditionalPrompt={setAdditionalPrompt}
@@ -36,10 +36,12 @@ export function UploadArea({selectedTemplate, setSelectedTemplate}) {
         renderedPage = uploadPage;
     } else if (isPressed === true && uploadID === null) {
         renderedPage = (
-            <div className={"rectangle-outer-loading"}>
-                <div className={"rectangle-inner-loading"}>
+            <div className={"rectangle-outer"}>
+                <div className={"rectangle-inner"}>
                     <p className={"loading-message"}>Loading</p>
-                    <ProgressBar/>
+                    <div className={"loading-container"}>
+                        <ProgressBar/>
+                    </div>
                 </div>
             </div>);
     } else {

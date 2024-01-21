@@ -64,16 +64,16 @@ export function UploadButton({uploadID,
                     <button className={"button"} onClick={handleClick}>
                         SELECT FILE
                     </button>
+                    <input
+                        type="file"
+                        onChange={handleFileInputChange}
+                        ref={hiddenFileInput}
+                        style={{display: 'none'}}
+                    />
                     <button className={"button"} type="submit">
                         CREATE
                     </button>
                 </div>
-                <input
-                    type="file"
-                    onChange={handleFileInputChange}
-                    ref={hiddenFileInput}
-                    style={{display: 'none'}}
-                />
             </form>
 
             {file && <p>{file.name}</p>}

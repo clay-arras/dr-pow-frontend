@@ -48,7 +48,7 @@ h3{
 
 /*UPLOAD SECTION*/
 
-.rectangle-outer-upload{
+.rectangle-outer{
     margin-top: 25px;
     padding: 2% 2%;
     width: 100%;
@@ -57,29 +57,18 @@ h3{
     border-radius: 20px;
 }
 
-.rectangle-inner-upload{
+.rectangle-inner{
     width: 100%;
     height: 100%;
-    padding: 5% 5%;
+    padding: 7% 0;
     background: #CCCBCD;
     border-radius: 20px;
 }
 
-.rectangle-outer-loading{
-    margin-top: 25px;
-    padding: 2% 2%;
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(282.62deg, #A8D8D8 -5.67%, #8E8EDB 105.1%);
-    border-radius: 20px;
-}
-
-.rectangle-inner-loading{
-    width: 100%;
-    height: 100%;
-    padding: 7% 25% 0;
+.loading-container{
+    display: flex;
+    justify-content: center;
     background: #CCCBCD;
-    border-radius: 20px;
 }
 
 .loading-message{
@@ -90,8 +79,10 @@ h3{
 }
 
 .prompt-container{
-    padding: 0 0 15px 37.5%;
+    display: flex;
+    justify-content: center;
     background: #CCCBCD;
+    padding-bottom: 10px;
 }
 
 .prompt{
