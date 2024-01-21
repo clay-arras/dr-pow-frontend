@@ -1,17 +1,21 @@
 import React, {useState} from "react";
 import {TemplateSelectorArea} from "./TemplateSelectorArea";
+import {UploadArea} from "./UploadArea";
 
 export function BigComponent() {
     const [selectedTemplate, setSelectedTemplate] = useState("Theme 1");
-    const [selectedFile, setSelectedFile] = useState(null);
-    const [selectedFiletype, setSelectedFiletype] = useState(null);
-    const [additionalPrompt, setAdditionalPrompt] = useState(null);
-    const [uploadID, setUploadID] = useState(null);
 
     return (
-      <TemplateSelectorArea
-          selectedTemplate={selectedTemplate}
-          setSelectedTemplate={setSelectedTemplate}
-      />
+        <p>
+            <TemplateSelectorArea
+                selectedTemplate={selectedTemplate}
+                setSelectedTemplate={setSelectedTemplate}
+            />
+            <UploadArea
+                selectedTemplate={selectedTemplate}
+                setSelectedTemplate={setSelectedTemplate}
+            />
+        </p>
+
     );
 }

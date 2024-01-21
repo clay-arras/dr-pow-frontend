@@ -2,7 +2,7 @@ import {useRef} from 'react';
 import {Button} from "@nextui-org/react";
 import {useState} from "react";
 
-function UploadButton() {
+export function UploadButton({uploadID, setUploadID, isPressed, setIsPressed}) {
     const [file, setFile] = useState(null);
     const handleFileInputChange = (event) => {
         setFile(event.target.files[0])
@@ -18,7 +18,8 @@ function UploadButton() {
     };
 
     const handleSubmit = async (event) => {
-        event.preventDefault()
+        event.preventDefault();
+        // setIsPressed(true);
 
         const formData = new FormData();
         formData.append("file", file);
@@ -32,8 +33,7 @@ function UploadButton() {
                 method: "POST",
                 body: formData
             }).then((res) => res.json()).then((data) => {
-                // console.log(data)
-                console.log(data['upload_id']);
+                setUploadID(data['upload_id']);
             })
 
             if (response.ok) {
@@ -49,7 +49,6 @@ function UploadButton() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                {/*<input type="file" onChange={handleFileInputChange}/>*/}
                 <Button color="primary" onClick={handleClick}>
                     Select File
                 </Button>
@@ -70,5 +69,3 @@ function UploadButton() {
         </div>
     );
 }
-
-export default UploadButton
