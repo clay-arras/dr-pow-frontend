@@ -20,6 +20,10 @@ export function UploadArea({selectedTemplate, setSelectedTemplate}) {
                 setUploadID={setUploadID}
                 isPressed={isPressed}
                 setIsPressed={setIsPressed}
+                additionalPrompt={additionalPrompt}
+                setAdditionalPrompt={setAdditionalPrompt}
+                selectedTemplate={selectedTemplate}
+                setSelectedTemplate={setSelectedTemplate}
             />
         </p>
     );
