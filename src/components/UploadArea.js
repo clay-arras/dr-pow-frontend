@@ -30,10 +30,15 @@ export function UploadArea({selectedTemplate, setSelectedTemplate}) {
     } else if (isPressed === true && uploadID === null) {
         renderedPage = (<ProgressBar/>);
     } else {
-        renderedPage = (<DownloadButton/>);
+        renderedPage = (
+            <DownloadButton
+                uploadID={uploadID}
+                setUploadID={setUploadID}
+            />
+        );
     }
 
     return (
-        <p> {renderedPage} </p>
+        <p>{renderedPage}</p>
     );
 }
