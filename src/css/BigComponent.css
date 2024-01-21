@@ -50,7 +50,9 @@ h3{
 
 .rectangle-outer{
     margin-top: 25px;
-    padding: 2% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 200px;
     background: linear-gradient(282.62deg, #A8D8D8 -5.67%, #8E8EDB 105.1%);
@@ -58,8 +60,8 @@ h3{
 }
 
 .rectangle-inner{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 90%;
     padding: 7% 0;
     background: #CCCBCD;
     border-radius: 20px;
