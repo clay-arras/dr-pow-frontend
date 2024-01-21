@@ -5,7 +5,7 @@ import {UploadArea} from "./UploadArea";
 import title from "../images/title-image.png"
 
 export function BigComponent() {
-    const [selectedTemplate, setSelectedTemplate] = useState("Theme 1");
+    const [selectedTemplate, setSelectedTemplate] = useState("Minimalistic");
 
     return (
         <div className={"main-container"}>

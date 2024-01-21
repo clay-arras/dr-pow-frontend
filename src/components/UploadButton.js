@@ -19,7 +19,7 @@ export function UploadButton({uploadID, setUploadID, isPressed, setIsPressed}) {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        // setIsPressed(true);
+        setIsPressed(true);
 
         const formData = new FormData();
         formData.append("file", file);
