@@ -4,7 +4,15 @@ import {useState} from "react";
 // import {Button} from "@nextui-org/react";
 
 
-export function UploadButton({uploadID, setUploadID, isPressed, setIsPressed}) {
+export function UploadButton({uploadID,
+                                 setUploadID,
+                                 isPressed,
+                                 setIsPressed,
+                                 additionalPrompt,
+                                 setAdditionalPrompt,
+                                 selectedTemplate,
+                                 setSelectedTemplate}) {
+
     const [file, setFile] = useState(null);
     const handleFileInputChange = (event) => {
         setFile(event.target.files[0])
@@ -20,17 +28,18 @@ export function UploadButton({uploadID, setUploadID, isPressed, setIsPressed}) {
     };
 
     const handleSubmit = async (event) => {
+        console.log()
         event.preventDefault();
         setIsPressed(true);
 
         const formData = new FormData();
         formData.append("file", file);
-        formData.append("prompt", "");
-        formData.append("template", "");
+        formData.append("prompt", additionalPrompt);
+        formData.append("template", selectedTemplate);
         formData.append("file_type", "");
 
         try {
-            const endpoint = "http://127.0.0.1:4000/upload"
+            const endpoint = "http://127.0.0.1:4000/upload?prompt=" + additionalPrompt + "&template=" + selectedTemplate
             const response = await fetch(endpoint, {
                 method: "POST",
                 body: formData
