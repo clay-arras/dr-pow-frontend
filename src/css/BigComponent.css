@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    background: #041349;
+}
+
+.main-container{
+    padding: 5% 15%;
+}
+
+/*MAIN TITLE SECTION*/
+.title-section{
+    display: flex;
+}
+
+.title-image{
+    width: 342px;
+    height: 330px;
+}
+
+.title{
+    padding-top: 100px;
+}
+
+.main-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+    color: white;
+}
+
+.sub-header{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: white;
+    padding-top: 5px;
+}
+
+/*UPLOAD SECTION*/
+
+
+
