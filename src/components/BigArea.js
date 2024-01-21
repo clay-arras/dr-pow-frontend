@@ -4,6 +4,7 @@ import { TemplateSelectorArea } from "./TemplateSelectorArea/TemplateSelectorAre
 import { UploadArea } from "./UploadArea/UploadArea";
 import title from "../images/title-image.png";
 import {Parallax} from "react-scroll-parallax";
+import {TooltipComponent} from "./UploadArea/TooltipComponent";
 
 export function BigArea() {
   const [selectedTemplate, setSelectedTemplate] = useState("Portfolio");
@@ -22,7 +23,6 @@ export function BigArea() {
                   </div>
               </div>
               <div className={"upload-section"}>
-                  <h2>Create Your Powerpoint!</h2>
                   <UploadArea
                       selectedTemplate={selectedTemplate}
                       setSelectedTemplate={setSelectedTemplate}

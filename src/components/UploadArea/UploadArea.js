@@ -54,5 +54,8 @@ export function UploadArea({ selectedTemplate, setSelectedTemplate }) {
     );
   }
 
-  return <>{renderedPage}</>;
+  return (<>
+    <h2>Create Your Powerpoint!</h2>
+    {renderedPage}
+  </>);
 }
