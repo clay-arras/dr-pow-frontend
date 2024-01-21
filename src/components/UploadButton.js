@@ -36,11 +36,11 @@ function UploadButton() {
                 console.log(data['upload_id']);
             })
 
-            // if (response.ok) {
-            //     console.log("file uploaded success")
-            // } else {
-            //     console.error("upload fail");
-            // }
+            if (response.ok) {
+                console.log("file uploaded success")
+            } else {
+                console.error("upload fail");
+            }
         } catch (error) {
             console.log(error);
         }

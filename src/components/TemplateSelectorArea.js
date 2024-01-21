@@ -2,7 +2,7 @@ import React from "react";
 import {DropdownComponent} from "./DropdownComponent";
 import {ImageComponent} from "./ImageComponent";
 
-export function TemplateComponent({selectedTemplate, setSelectedTemplate}) {
+export function TemplateSelectorArea({selectedTemplate, setSelectedTemplate}) {
     const dict = {
         "Theme 0" : "https://media.slidesgo.com/storage/47634150/responsive-images/cool-homework-infographics1705492791___media_library_original_655_368.jpg",
         "Theme 1" : "https://media.slidesgo.com/storage/47587464/responsive-images/online-karaoke-social-media-strategy1705414268___media_library_original_655_368.jpg",

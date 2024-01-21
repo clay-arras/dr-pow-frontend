@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {TemplateComponent} from "./TemplateComponent";
+import {TemplateSelectorArea} from "./TemplateSelectorArea";
 
 export function BigComponent() {
     const [selectedTemplate, setSelectedTemplate] = useState("Theme 1");
@@ -9,7 +9,7 @@ export function BigComponent() {
     const [uploadID, setUploadID] = useState(null);
 
     return (
-      <TemplateComponent
+      <TemplateSelectorArea
           selectedTemplate={selectedTemplate}
           setSelectedTemplate={setSelectedTemplate}
       />

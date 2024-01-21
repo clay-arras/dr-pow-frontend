@@ -1,7 +1,6 @@
 import {Button} from "@nextui-org/react";
-import {useState} from "react";
 
-function DownloadButton(){
+export function DownloadButton(){
     return(
         <div>
             <Button color="primary" >
@@ -10,5 +9,3 @@ function DownloadButton(){
         </div>
     )
 }
-
-export default DownloadButton
