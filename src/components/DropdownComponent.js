@@ -10,9 +10,7 @@ export function DropdownComponent({selectedTemplate, setSelectedTemplate, dict})
     return (
         <Dropdown>
             <DropdownTrigger>
-                <Button
-                    variant="bordered"
-                >
+                <Button variant="bordered">
                     Choose template
                 </Button>
             </DropdownTrigger>
