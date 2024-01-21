@@ -50,9 +50,6 @@ export function UploadArea({ selectedTemplate, setSelectedTemplate }) {
     );
   } else {
     renderedPage = (
-      //   <div className={"rectangle-outer"}>
-      //     <div className={"rectangle-inner"}>
-      //       <div className={"download-container"}>
       <DownloadButtonComponent uploadID={uploadID} setUploadID={setUploadID} />
     );
   }

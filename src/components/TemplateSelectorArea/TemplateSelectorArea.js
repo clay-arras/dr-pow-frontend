@@ -21,18 +21,21 @@ export function TemplateSelectorArea({
 
   return (
     <>
-      <div className={"choose-template-button"}>
-        <DropdownComponent
-          selectedTemplate={selectedTemplate}
-          setSelectedTemplate={setSelectedTemplate}
-          dict={dict}
+        <div className={"title-flex"}>
+            <div><h2>Create Your Powerpoint!</h2></div>
+            <div className={"choose-template-button"}>
+                <DropdownComponent
+                    selectedTemplate={selectedTemplate}
+                    setSelectedTemplate={setSelectedTemplate}
+                    dict={dict}
+                />
+            </div>
+        </div>
+        <ImageComponent
+            selectedTemplate={selectedTemplate}
+            setSelectedTemplate={setSelectedTemplate}
+            dict={dict}
         />
-      </div>
-      <ImageComponent
-        selectedTemplate={selectedTemplate}
-        setSelectedTemplate={setSelectedTemplate}
-        dict={dict}
-      />
     </>
   );
 }

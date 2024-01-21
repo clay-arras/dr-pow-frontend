@@ -9,24 +9,24 @@ export function BigArea() {
 
   return (
     <div className={"main-container"}>
-      <div className={"title-section"}>
-        <img src={title} alt="logo" className={"title-image"} />
-        <div className={"title"}>
-          <h1>DoC-To-POW!</h1>
-          <h3 className={"sub-header"}>
-            YOUR #1 MULTI-LANGUAGE AI POWERPOINT ASSISTANT
-          </h3>
+        <div className={"title-section"}>
+            <img src={title} alt="logo" className={"title-image"}/>
+
+            <div className={"title"}>
+                <h1>DoC-To-POW!</h1>
+                <h3 className={"sub-header"}>
+                    YOUR #1 MULTI-LANGUAGE AI POWERPOINT ASSISTANT
+                </h3>
+            </div>
         </div>
-      </div>
-      <div className={"upload-section"}>
-        <h2>Create Your Powerpoint!</h2>
+        <div className={"upload-section"}>
+            <h2>Create Your Powerpoint!</h2>
         <UploadArea
           selectedTemplate={selectedTemplate}
           setSelectedTemplate={setSelectedTemplate}
         />
       </div>
       <div className={"theme-section"}>
-        <h2>Choose A Template!</h2>
         <TemplateSelectorArea
           selectedTemplate={selectedTemplate}
           setSelectedTemplate={setSelectedTemplate}
