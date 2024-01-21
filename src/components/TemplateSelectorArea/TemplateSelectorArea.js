@@ -1,11 +1,11 @@
 import React from "react";
 import {DropdownComponent} from "./DropdownComponent";
 import {ImageComponent} from "./ImageComponent";
-import image1 from "../template_examples/Minimalistic.jpg"
-import image2 from "../template_examples/History.jpg"
-import image3 from "../template_examples/Pastel.jpg"
-import image4 from "../template_examples/Portfolio.jpg"
-import image5 from "../template_examples/School.jpg"
+import image1 from "../../template_examples/Minimalistic.jpg"
+import image2 from "../../template_examples/History.jpg"
+import image3 from "../../template_examples/Pastel.jpg"
+import image4 from "../../template_examples/Portfolio.jpg"
+import image5 from "../../template_examples/School.jpg"
 
 export function TemplateSelectorArea({selectedTemplate, setSelectedTemplate}) {
     const dict = {
