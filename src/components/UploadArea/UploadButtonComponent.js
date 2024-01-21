@@ -1,11 +1,8 @@
-import "../css/BigComponent.css"
+import "../../css/BigComponent.css"
 import {useRef} from 'react';
-import {useState} from "react";
 import {Button} from "@nextui-org/react";
-import {isDisabled} from "@testing-library/user-event/dist/utils";
 
-
-export function UploadButton({uploadID,
+export function UploadButtonComponent({uploadID,
                                  setUploadID,
                                  isPressed,
                                  setIsPressed,

@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import "../css/BigComponent.css";
-import {TemplateSelectorArea} from "./TemplateSelectorArea";
-import {UploadArea} from "./UploadArea";
+import {TemplateSelectorArea} from "./TemplateSelectorArea/TemplateSelectorArea";
+import {UploadArea} from "./UploadArea/UploadArea";
 import title from "../images/title-image.png"
 
-export function BigComponent() {
+export function BigArea() {
     const [selectedTemplate, setSelectedTemplate] = useState("Minimalistic");
 
     return (

@@ -1,10 +1,10 @@
 import './App.css';
-import {BigComponent} from "./components/BigComponent";
+import {BigArea} from "./components/BigArea";
 
 function App() {
     return (
         <div className={"bigdaddy"}>
-            <BigComponent/>
+            <BigArea/>
         </div>
     );
 }

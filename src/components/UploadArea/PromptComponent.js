@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/BigComponent.css"
+import "../../css/BigComponent.css"
 
 import {Input} from "@nextui-org/react";
 

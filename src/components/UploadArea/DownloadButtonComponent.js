@@ -1,6 +1,6 @@
 import {Button} from "@nextui-org/react";
 
-export function DownloadButton({uploadID, setUploadID, file}){
+export function DownloadButtonComponent({uploadID, setUploadID, file}){
 
     const handleSubmit = async (event) => {
         event.preventDefault();

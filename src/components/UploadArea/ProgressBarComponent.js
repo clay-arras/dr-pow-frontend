@@ -1,6 +1,6 @@
 import { Progress } from "@nextui-org/react";
 
-export function ProgressBar() {
+export function ProgressBarComponent() {
     return (
         <Progress
             size="sm"
