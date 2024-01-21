@@ -212,6 +212,14 @@ img {
 .title-section {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.tooltip_section {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 3rem;
     width: 100%;

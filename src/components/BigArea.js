@@ -24,7 +24,7 @@ export function BigArea() {
                     </div>
                 </div>
                 <div className={"upload-section"}>
-                    <div className={"title-section"}>
+                    <div className={"tooltip_section"}>
                         <div>
                             <h2>Create Your Powerpoint!</h2>
                         </div>
