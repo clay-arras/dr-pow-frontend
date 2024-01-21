@@ -54,5 +54,7 @@ export function UploadArea({ selectedTemplate, setSelectedTemplate }) {
     );
   }
 
-  return <>{renderedPage}</>;
+  return (<>
+    {renderedPage}
+  </>);
 }
