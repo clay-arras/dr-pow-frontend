@@ -4,14 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {NextUIProvider} from "@nextui-org/react";
+import {ParallaxProvider} from "react-scroll-parallax";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <NextUIProvider>
-        <React.StrictMode>
-            <App/>
-        </React.StrictMode>
-    </NextUIProvider>
+    <ParallaxProvider>
+        <NextUIProvider>
+            <React.StrictMode>
+                <App/>
+            </React.StrictMode>
+        </NextUIProvider>
+    </ParallaxProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
