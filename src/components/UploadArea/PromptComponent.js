@@ -10,7 +10,7 @@ export function PromptComponent({additionalPrompt, setAdditionalPrompt}) {
 
     return (
         <div className={"prompt-container"}>
-            <Input className={"prompt"} type="email" label="Prompt" placeholder={"Prompt..."} onChange={handleChange}/>
+            <Input className={"prompt"} label={"Enter additional prompt here..."} onChange={handleChange}/>
         </div>
     );
 }
