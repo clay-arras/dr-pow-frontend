@@ -146,11 +146,12 @@
 
 *{
     margin: 0;
-    background: var(--primary-800);
+
 }
 
 body {
     padding: 2rem;
+    background: var(--primary-800);
 }
 
 h1{
@@ -195,6 +196,10 @@ h3{
     align-items: center;
     justify-content: center;
     justify-items: center;
+
+}
+.theme-section button {
+    background: var(--primary-100);
 }
 
 .choose-template-button {
@@ -215,4 +220,8 @@ h3{
 
 .title-section title{
 
+}
+
+.prompt-container {
+    color: var(--primary-100);
 }
