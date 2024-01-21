@@ -3,7 +3,7 @@ import {TemplateSelectorArea} from "./TemplateSelectorArea";
 import {UploadArea} from "./UploadArea";
 
 export function BigComponent() {
-    const [selectedTemplate, setSelectedTemplate] = useState("Theme 1");
+    const [selectedTemplate, setSelectedTemplate] = useState("Minimalistic");
 
     return (
         <p>
