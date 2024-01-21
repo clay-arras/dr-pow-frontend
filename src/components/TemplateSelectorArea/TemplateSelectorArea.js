@@ -22,7 +22,7 @@ export function TemplateSelectorArea({
   return (
     <>
         <div className={"title-flex"}>
-            <div><h2>Create Your Powerpoint!</h2></div>
+            <div><h2>Select Your Template!</h2></div>
             <div className={"choose-template-button"}>
                 <DropdownComponent
                     selectedTemplate={selectedTemplate}

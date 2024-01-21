@@ -219,7 +219,9 @@ img {
 .title-flex {
     display: flex;
     width: 100%;
-    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .upload-section {
@@ -250,9 +252,24 @@ img {
     align-items: center;
     padding: 0.75rem;
     justify-content: center;
-    background: linear-gradient(282.62deg, #A8D8D8 -5.67%, #8E8EDB 105.1%);
+    background: linear-gradient(-45deg, #AE7EDE, #7828C8, #481878);
+    background-size: 400% 400%;
     border-radius: 20px;
+    animation: gradient 3s ease infinite;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .rectangle-inner {
     width: 100%;
