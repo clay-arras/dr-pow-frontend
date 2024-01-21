@@ -140,7 +140,7 @@
 
     --primary-800: #041349;
     --primary-400: #8184E3;
-    --primary-300: #CCCBCD;
+    --primary-300: #dadada;
     --primary-100: white;
 }
 
@@ -150,13 +150,13 @@
 }
 
 body {
-    padding: 2rem;
+    padding: 1rem 7rem;
     background: var(--primary-800);
 }
 
 h1{
     font-weight: 700;
-    font-size: 80px;
+    font-size: 5rem;
     line-height: 100%;
     color: var(--primary-100);
 }
@@ -175,6 +175,27 @@ h3{
     color: var(--primary-100);
 }
 
+p{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+    color: black;
+}
+
+label{
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--primary-300);
+}
+
+img{
+    width: 54rem;
+    height: 33  rem;
+    object-fit: contain;
+}
+
 .main-container{
     display: flex;
     padding: 0rem;
@@ -183,24 +204,36 @@ h3{
     justify-items: center;
     align-items: center;
 }
+
 .title-section {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
+}
+
+.upload-section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
 }
 
 .theme-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+    align-items: left;
+    margin-top: 3rem;
+}
 
+.title-image{
+    width: 20rem;
+    height: 20rem;
 }
 
 .rectangle-outer{
     margin-top: 25px;
-    width: 45rem;
+    width: 54rem;
     height: 10rem;
     display: flex;
     align-items: center;
@@ -213,21 +246,18 @@ h3{
 .rectangle-inner{
     width: 100%;
     height: 100%;
-    background: #CCCBCD;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-300);
     border-radius: 20px;
 }
 
-/*.prompt{*/
-/*    padding: 0 1%;*/
-/*    height: 40px;*/
-/*    left: 580px;*/
-/*    right: 580px;*/
-/*    top: 477px;*/
-/*    background: rgba(255, 255, 255, 0.002);*/
-/*    border: 2px solid #3C397E;*/
-/*    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);*/
-/*    border-radius: 14px;*/
-/*}*/
+.upload{
+    gap: 1rem;
+}
+.loading{
+    padding-top: 2rem;
+}
 
 .theme-section button {
     background: var(--primary-100);
@@ -235,6 +265,7 @@ h3{
 
 .choose-template-button {
     width: 100%;
+    margin: 1rem 0;
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -243,13 +274,58 @@ h3{
 
 .choose-template-button button {
     margin-left: auto;
-}
-
-.title-image{
-    width: 25rem;
-    height: 25rem;
+    color: white;
+    background-color: var(--primary-400);
 }
 
 .prompt-container {
     color: var(--primary-100);
+}
+
+.button{
+    width: 150px;
+    height: 30px;
+    color: white;
+    font-weight: 500;
+    background: var(--primary-400);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.select-button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+
+.loading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.max-w-md{
+    background-color:#041349;
+}
+
+.loading-message{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: grey;
+}
+
+.download-container{
+    display: flex;
+    align-items: center;
+    padding-top: 3.3rem;
+    justify-content: center;
 }

@@ -1,17 +1,19 @@
 import "../../css/BigComponent.css"
 import {useRef} from 'react';
-import {Button} from "@nextui-org/react";
+import {Button, ButtonGroup} from "@nextui-org/react";
 
-export function UploadButtonComponent({uploadID,
-                                 setUploadID,
-                                 isPressed,
-                                 setIsPressed,
-                                 additionalPrompt,
-                                 setAdditionalPrompt,
-                                 selectedTemplate,
-                                 setSelectedTemplate,
-                                 selectedFile,
-                                 setSelectedFile}) {
+export function UploadButtonComponent({
+                                          uploadID,
+                                          setUploadID,
+                                          isPressed,
+                                          setIsPressed,
+                                          additionalPrompt,
+                                          setAdditionalPrompt,
+                                          selectedTemplate,
+                                          setSelectedTemplate,
+                                          selectedFile,
+                                          setSelectedFile
+                                      }) {
 
     const handleFileInputChange = (event) => {
         setSelectedFile(event.target.files[0])
@@ -57,23 +59,43 @@ export function UploadButtonComponent({uploadID,
     }
 
     return (
-        <div>
-            <div className={"buttonContainer"}>
-                <Button className={"button"} onClick={handleClick}>
-                    SELECT FILE
-                </Button>
+        <div className={"buttonContainer"}>
+            <div className={"select-button-container"}>
+                <ButtonGroup>
+                    <Button className={"button"} onClick={handleClick}>
+                        SELECT FILE
+                    </Button>
+                    <Button className={"button"} type="submit" onClick={handleSubmit}
+                            isDisabled={(selectedFile === null)}>
+                        CREATE
+                    </Button>
+                </ButtonGroup>
                 <input
                     type="file"
                     onChange={handleFileInputChange}
                     ref={hiddenFileInput}
                     style={{display: 'none'}}
                 />
-                <Button className={"button"} type="submit" onClick={handleSubmit} isDisabled={(selectedFile === null)}>
-                    CREATE
-                </Button>
+                {selectedFile && <p>File selected: {selectedFile.name}</p>}
             </div>
-
-            {selectedFile && <p>{selectedFile.name}</p>}
         </div>
+
+        // <div className={"buttonContainer"}>
+        //     <div className={"select-button-container"}>
+        //         <Button className={"button"} onClick={handleClick}>
+        //             SELECT FILE
+        //         </Button>
+        //         {selectedFile && <p>{selectedFile.name}</p>}
+        //     </div>
+        //     <input
+        //         type="file"
+        //         onChange={handleFileInputChange}
+        //         ref={hiddenFileInput}
+        //         style={{display: 'none'}}
+        //     />
+        //     <Button className={"button"} type="submit" onClick={handleSubmit} isDisabled={(selectedFile === null)}>
+        //         CREATE
+        //     </Button>
+        // </div>
     );
 }
