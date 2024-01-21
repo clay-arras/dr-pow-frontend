@@ -1,6 +1,8 @@
+import "../css/BigComponent.css"
 import {useRef} from 'react';
-import {Button} from "@nextui-org/react";
 import {useState} from "react";
+// import {Button} from "@nextui-org/react";
+
 
 export function UploadButton({uploadID, setUploadID, isPressed, setIsPressed}) {
     const [file, setFile] = useState(null);
@@ -49,20 +51,20 @@ export function UploadButton({uploadID, setUploadID, isPressed, setIsPressed}) {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <Button color="primary" onClick={handleClick}>
-                    Select File
-                </Button>
-
+                <div className={"buttonContainer"}>
+                    <button className={"button"} onClick={handleClick}>
+                        SELECT FILE
+                    </button>
+                    <button className={"button"} type="submit">
+                        CREATE
+                    </button>
+                </div>
                 <input
                     type="file"
                     onChange={handleFileInputChange}
                     ref={hiddenFileInput}
                     style={{display: 'none'}}
                 />
-
-                <Button type="submit" color="primary">
-                    Upload
-                </Button>
             </form>
 
             {file && <p>{file.name}</p>}

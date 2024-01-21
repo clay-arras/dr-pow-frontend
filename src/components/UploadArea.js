@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "../css/BigComponent.css";
 import {UploadButton} from "./UploadButton";
 import {DownloadButton} from "./DownloadButton";
 import {PromptComponent} from "./PromptComponent";
@@ -10,25 +11,33 @@ export function UploadArea({selectedTemplate, setSelectedTemplate}) {
     const [isPressed, setIsPressed] = useState(false);
 
     const uploadPage = (
-        <p>
-            <PromptComponent
-                additionalPrompt={additionalPrompt}
-                setAdditionalPrompt={setAdditionalPrompt}
-            />
-            <UploadButton
-                uploadID={uploadID}
-                setUploadID={setUploadID}
-                isPressed={isPressed}
-                setIsPressed={setIsPressed}
-            />
-        </p>
+        <div className={"rectangle-outer-upload"}>
+            <div className={"rectangle-inner-upload"}>
+                <PromptComponent
+                    additionalPrompt={additionalPrompt}
+                    setAdditionalPrompt={setAdditionalPrompt}
+                />
+                <UploadButton
+                    uploadID={uploadID}
+                    setUploadID={setUploadID}
+                    isPressed={isPressed}
+                    setIsPressed={setIsPressed}
+                />
+            </div>
+        </div>
     );
 
     let renderedPage = (<h1>Error!</h1>);
     if (isPressed === false) {
         renderedPage = uploadPage;
     } else if (isPressed === true && uploadID === null) {
-        renderedPage = (<ProgressBar/>);
+        renderedPage = (
+            <div className={"rectangle-outer-loading"}>
+                <div className={"rectangle-inner-loading"}>
+                    <p className={"loading-message"}>Loading</p>
+                    <ProgressBar/>
+                </div>
+            </div>);
     } else {
         renderedPage = (
             <DownloadButton

@@ -21,7 +21,7 @@
     padding-top: 100px;
 }
 
-.main-header{
+h1{
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
@@ -29,7 +29,15 @@
     color: white;
 }
 
-.sub-header{
+h2{
+    font-style: normal;
+    font-weight: 650;
+    font-size: 40px;
+    line-height: 28px;
+    color: white;
+}
+
+h3{
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -40,5 +48,89 @@
 
 /*UPLOAD SECTION*/
 
+.rectangle-outer-upload{
+    margin-top: 25px;
+    padding: 2% 2%;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(282.62deg, #A8D8D8 -5.67%, #8E8EDB 105.1%);
+    border-radius: 20px;
+}
 
+.rectangle-inner-upload{
+    width: 100%;
+    height: 100%;
+    padding: 5% 5%;
+    background: #CCCBCD;
+    border-radius: 20px;
+}
 
+.rectangle-outer-loading{
+    margin-top: 25px;
+    padding: 2% 2%;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(282.62deg, #A8D8D8 -5.67%, #8E8EDB 105.1%);
+    border-radius: 20px;
+}
+
+.rectangle-inner-loading{
+    width: 100%;
+    height: 100%;
+    padding: 7% 25% 0;
+    background: #CCCBCD;
+    border-radius: 20px;
+}
+
+.loading-message{
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    background: #CCCBCD;
+}
+
+.prompt-container{
+    padding: 0 0 15px 37.5%;
+    background: #CCCBCD;
+}
+
+.prompt{
+    padding: 0 1%;
+    height: 40px;
+    left: 580px;
+    right: 580px;
+    top: 477px;
+    background: rgba(255, 255, 255, 0.002);
+    border: 2px solid #3C397E;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+}
+
+.button{
+    width: 150px;
+    height: 30px;
+    left: calc(50% - 255px/2 - 224.5px);
+    top: 563px;
+    color: white;
+    font-weight: 500;
+    background: #8184E3;
+    /* shadow/neutral/lg */
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    background: #CCCBCD;
+    gap: 20%;
+}
+
+/*THEME SECTION*/
+
+.theme-section{
+    padding: 6% 0;
+}

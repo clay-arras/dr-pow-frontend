@@ -1,5 +1,7 @@
 import React from "react";
-import {Input} from "@nextui-org/react";
+import "../css/BigComponent.css"
+
+// import {Input} from "@nextui-org/react";
 
 export function PromptComponent({additionalPrompt, setAdditionalPrompt}) {
     const handleChange = (e) => {
@@ -7,6 +9,8 @@ export function PromptComponent({additionalPrompt, setAdditionalPrompt}) {
     };
 
     return (
-        <Input type="email" label="Prompt" onChange={handleChange}/>
+        <div className={"prompt-container"}>
+            <input className={"prompt"} type="email" label="Prompt" placeholder={"Prompt..."} onChange={handleChange}/>
+        </div>
     );
 }
