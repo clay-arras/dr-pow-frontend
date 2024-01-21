@@ -65,7 +65,7 @@ export function UploadButtonComponent({
                         SELECT FILE
                     </Button>
                     <Button className={"button"} type="submit" onClick={handleSubmit}
-                            isDisabled={(selectedFile === null)}>
+                            isDisabled={(selectedFile === null || selectedFile === undefined)}>
                         UPLOAD
                     </Button>
                 </ButtonGroup>
