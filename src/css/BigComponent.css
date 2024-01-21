@@ -146,11 +146,10 @@
 
 *{
     margin: 0;
-
 }
 
 body {
-    padding: 1rem 7rem;
+    padding: 1rem 1rem 7rem;
     background: var(--primary-800);
 }
 
@@ -217,6 +216,7 @@ img{
     flex-direction: column;
     align-items: left;
     justify-content: left;
+    margin-top: 3rem;
 }
 
 .theme-section {
@@ -239,8 +239,23 @@ img{
     align-items: center;
     padding: 0.75rem;
     justify-content: center;
-    background: linear-gradient(282.62deg, #A8D8D8 -5.67%, #8E8EDB 105.1%);
+    background: linear-gradient(45deg, hsl(180, 48%, 65%), #A8D8D8, #b18edb, var(--primary-400),
+    #A8D8D8, hsl(180, 48%, 65%));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     border-radius: 20px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .rectangle-inner{
