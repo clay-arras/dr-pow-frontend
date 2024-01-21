@@ -31,7 +31,7 @@ export function DownloadButtonComponent({uploadID, setUploadID, file}) {
                     link.parentNode.removeChild(link);
 
                     // refresh the page
-                    window.location.reload();
+                    // window.location.reload();
                 });
 
             if (response.ok) {
