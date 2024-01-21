@@ -7,6 +7,7 @@ export function ProgressBarComponent() {
             isIndeterminate
             aria-label="Loading..."
             className="max-w-md"
+            color={"secondary"}
         />
     );
 }

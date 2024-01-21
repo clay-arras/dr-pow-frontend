@@ -3,7 +3,7 @@ import {BigArea} from "./components/BigArea";
 
 function App() {
     return (
-        <div className={"bigdaddy"}>
+        <div className={"AppArea"}>
             <BigArea/>
         </div>
     );

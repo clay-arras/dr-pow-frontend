@@ -5,7 +5,7 @@ import { UploadArea } from "./UploadArea/UploadArea";
 import title from "../images/title-image.png";
 
 export function BigArea() {
-  const [selectedTemplate, setSelectedTemplate] = useState("Minimalistic");
+  const [selectedTemplate, setSelectedTemplate] = useState("Portfolio");
 
   return (
     <div className={"main-container"}>
