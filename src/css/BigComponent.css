@@ -139,12 +139,12 @@
     font-weight: 1000;
 
     --primary-800: #041349;
-    --primary-400: #8184E3;
+    --primary-400: #3d42f3;
     --primary-300: #dadada;
     --primary-100: white;
 }
 
-*{
+* {
     margin: 0;
 }
 
@@ -153,28 +153,28 @@ body {
     background: var(--primary-800);
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 5rem;
     line-height: 100%;
     color: var(--primary-100);
 }
 
-h2{
+h2 {
     font-weight: 650;
     font-size: 40px;
     line-height: 28px;
     color: var(--primary-100);
 }
 
-h3{
+h3 {
     font-weight: 600;
     font-size: 15px;
     line-height: 28px;
     color: var(--primary-100);
 }
 
-p{
+p {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
@@ -182,20 +182,20 @@ p{
     color: black;
 }
 
-label{
+label {
     font-weight: 450;
     font-size: 20px;
     line-height: 28px;
     color: var(--primary-300);
 }
 
-img{
+img {
     width: 54rem;
-    height: 33  rem;
+    height: 33rem;
     object-fit: contain;
 }
 
-.main-container{
+.main-container {
     display: flex;
     padding: 0rem;
     flex-direction: column;
@@ -211,10 +211,9 @@ img{
     margin-top: 3rem;
 }
 
-.upload-section{
+.upload-section {
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: left;
     margin-top: 3rem;
 }
@@ -222,16 +221,15 @@ img{
 .theme-section {
     display: flex;
     flex-direction: column;
-    align-items: left;
     margin-top: 3rem;
 }
 
-.title-image{
+.title-image {
     width: 20rem;
     height: 20rem;
 }
 
-.rectangle-outer{
+.rectangle-outer {
     margin-top: 25px;
     width: 54rem;
     height: 10rem;
@@ -239,26 +237,25 @@ img{
     align-items: center;
     padding: 0.75rem;
     justify-content: center;
-    background: linear-gradient(45deg, hsl(180, 48%, 65%), #A8D8D8, #b18edb, var(--primary-400),
-    #A8D8D8, hsl(180, 48%, 65%));
+    background: linear-gradient(45deg, #C9A9E9, #9353D3, #6020A0, #180828);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
     border-radius: 20px;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.rectangle-inner{
+.rectangle-inner {
     width: 100%;
     height: 100%;
     display: flex;
@@ -267,10 +264,11 @@ img{
     border-radius: 20px;
 }
 
-.upload{
+.upload {
     gap: 1rem;
 }
-.loading{
+
+.loading {
     padding-top: 2rem;
 }
 
@@ -297,7 +295,7 @@ img{
     color: var(--primary-100);
 }
 
-.button{
+.button {
     width: 150px;
     height: 30px;
     color: white;
@@ -306,13 +304,13 @@ img{
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.select-button-container{
+.select-button-container {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
 }
 
-.buttonContainer{
+.buttonContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -320,13 +318,13 @@ img{
     height: fit-content;
 }
 
-.loading-container{
+.loading-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.loading-message{
+.loading-message {
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 400;
@@ -334,9 +332,19 @@ img{
     color: grey;
 }
 
-.download-container{
+.download-container {
     display: flex;
     align-items: center;
     padding-top: 3.3rem;
     justify-content: center;
+}
+
+.title h1 {
+    color: #006FEE;
+}
+
+.title h1 {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

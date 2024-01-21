@@ -67,7 +67,7 @@ export function UploadButtonComponent({
                     </Button>
                     <Button className={"button"} type="submit" onClick={handleSubmit}
                             isDisabled={(selectedFile === null)}>
-                        CREATE
+                        UPLOAD
                     </Button>
                 </ButtonGroup>
                 <input
