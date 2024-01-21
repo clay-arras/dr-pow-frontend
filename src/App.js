@@ -1,13 +1,10 @@
 import './App.css';
-import TemplateComponent from "./components/TemplateComponent"
+import {BigComponent} from "./components/BigComponent";
 
 function App() {
     return (
         <div>
-            {/*<myTemplate>*/}
-
-            {/*</myTemplate>*/}
-            <TemplateComponent></TemplateComponent>
+            <BigComponent/>
         </div>
     );
 }
