@@ -17,17 +17,19 @@ export function TemplateSelectorArea({selectedTemplate, setSelectedTemplate}) {
     };
 
     return (
-        <p>
-            <DropdownComponent
-                selectedTemplate={selectedTemplate}
-                setSelectedTemplate={setSelectedTemplate}
-                dict={dict}
-            />
+        <>
+            <div className={"choose-template-button"}>
+                <DropdownComponent
+                    selectedTemplate={selectedTemplate}
+                    setSelectedTemplate={setSelectedTemplate}
+                    dict={dict}
+                />
+            </div>
             <ImageComponent
                 selectedTemplate={selectedTemplate}
                 setSelectedTemplate={setSelectedTemplate}
                 dict={dict}
             />
-        </p>
+        </>
     );
 }

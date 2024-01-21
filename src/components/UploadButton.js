@@ -1,7 +1,8 @@
 import "../css/BigComponent.css"
 import {useRef} from 'react';
 import {useState} from "react";
-// import {Button} from "@nextui-org/react";
+import {Button} from "@nextui-org/react";
+import {isDisabled} from "@testing-library/user-event/dist/utils";
 
 
 export function UploadButton({uploadID,
@@ -11,11 +12,12 @@ export function UploadButton({uploadID,
                                  additionalPrompt,
                                  setAdditionalPrompt,
                                  selectedTemplate,
-                                 setSelectedTemplate}) {
+                                 setSelectedTemplate,
+                                 selectedFile,
+                                 setSelectedFile}) {
 
-    const [file, setFile] = useState(null);
     const handleFileInputChange = (event) => {
-        setFile(event.target.files[0])
+        setSelectedFile(event.target.files[0])
     }
 
     // Create a reference to the hidden file input element
@@ -33,7 +35,7 @@ export function UploadButton({uploadID,
         setIsPressed(true);
 
         const formData = new FormData();
-        formData.append("file", file);
+        formData.append("file", selectedFile);
         formData.append("prompt", additionalPrompt);
         formData.append("template", selectedTemplate);
         formData.append("file_type", "");
@@ -59,24 +61,22 @@ export function UploadButton({uploadID,
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <div className={"buttonContainer"}>
-                    <button className={"button"} onClick={handleClick}>
-                        SELECT FILE
-                    </button>
-                    <input
-                        type="file"
-                        onChange={handleFileInputChange}
-                        ref={hiddenFileInput}
-                        style={{display: 'none'}}
-                    />
-                    <button className={"button"} type="submit">
-                        CREATE
-                    </button>
-                </div>
-            </form>
+            <div className={"buttonContainer"}>
+                <Button className={"button"} onClick={handleClick}>
+                    SELECT FILE
+                </Button>
+                <input
+                    type="file"
+                    onChange={handleFileInputChange}
+                    ref={hiddenFileInput}
+                    style={{display: 'none'}}
+                />
+                <Button className={"button"} type="submit" onClick={handleSubmit} isDisabled={(selectedFile === null)}>
+                    CREATE
+                </Button>
+            </div>
 
-            {file && <p>{file.name}</p>}
+            {selectedFile && <p>{selectedFile.name}</p>}
         </div>
     );
 }

@@ -3,7 +3,7 @@ import {BigComponent} from "./components/BigComponent";
 
 function App() {
     return (
-        <div>
+        <div className={"bigdaddy"}>
             <BigComponent/>
         </div>
     );

@@ -9,6 +9,7 @@ export function UploadArea({selectedTemplate, setSelectedTemplate}) {
     const [additionalPrompt, setAdditionalPrompt] = useState("");
     const [uploadID, setUploadID] = useState(null);
     const [isPressed, setIsPressed] = useState(false);
+    const [selectedFile, setSelectedFile] = useState(null);
 
     const uploadPage = (
         <div className={"rectangle-outer"}>
@@ -26,6 +27,8 @@ export function UploadArea({selectedTemplate, setSelectedTemplate}) {
                     setAdditionalPrompt={setAdditionalPrompt}
                     selectedTemplate={selectedTemplate}
                     setSelectedTemplate={setSelectedTemplate}
+                    selectedFile={selectedFile}
+                    setSelectedFile={setSelectedFile}
                 />
             </div>
         </div>
@@ -54,6 +57,6 @@ export function UploadArea({selectedTemplate, setSelectedTemplate}) {
     }
 
     return (
-        <p>{renderedPage}</p>
+        <>{renderedPage}</>
     );
 }
