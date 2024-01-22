@@ -19,7 +19,7 @@ export function TooltipComponent() {
                                 <li> 1. Upload file or picture</li>
                                 <li> 2. Select template</li>
                                 <li> 3. (Optional) Enter additional prompt in the text box</li>
-                                <li> 4. Hit upload!</li>
+                                {/*<li> 4. Hit upload!</li>*/}
                             </ul>
                         </div>
                     </div>
