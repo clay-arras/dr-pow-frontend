@@ -7,11 +7,11 @@ DoC-To-PoW is an AI-powered opensource service designed to quickly generate pres
 details of document types supported, please see the following section). 
 ### Gallery
 Main Page:
-![Main Page](src/images/Main Page.png "Main Page")
+![Main Page](src/images/MainPage.png "Main Page")
 Sample Output 1:
-![Sample Output1](src/images/Sample Output1.png "Sample Output 1")
+![Sample Output1](src/images/SampleOutput1.png "Sample Output 1")
 Sample Output 2:
-![Sample Output2](src/images/Sample Output2.png "Sample Output 2")
+![Sample Output2](src/images/SampleOutput2.png "Sample Output 2")
 ### Supported File Types
 1. Plain Text Files
    - .txt
